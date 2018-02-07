@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRATION FORM"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="48dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Firstname"
+        android:layout_below="@+id/title"/>
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lastname"
+        android:layout_below="@+id/firstname"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/lastname"
+        android:layout_alignRight="@+id/title"
+        android:layout_alignEnd="@+id/title"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/username"
+        android:layout_alignRight="@+id/title"
+        android:layout_alignEnd="@+id/title"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-Mail Address"
+        android:layout_below="@id/password"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/mobilePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/email"/>
+
+    <Button
+        android:id="@+id/loginReturn"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:text="Already a user"
+        android:textColor="#1F3A93"
+        android:textSize="15sp"
+        android:layout_marginTop="14dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape3"
+        android:layout_below="@id/createAccountButton"/>
+
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="#CF000F"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape4"
+        android:layout_below="@id/mobilePhone"/>
+
+    <ImageButton
+        android:id="@+id/usernameHelpButton"
+        android:src="@drawable/helppnp2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/circle_button"
+        android:scaleType="fitCenter"
+        android:layout_alignTop="@+id/username"
+        android:layout_toRightOf="@+id/username"
+        android:layout_toEndOf="@+id/username" />
+
+    <ImageButton
+        android:id="@+id/passwordHelpButton"
+        android:src="@drawable/helppnp2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/circle_button"
+        android:scaleType="fitCenter"
+        android:layout_alignTop="@+id/password"
+        android:layout_toRightOf="@+id/password"
+        android:layout_toEndOf="@+id/password" />
+
+</RelativeLayout>
+

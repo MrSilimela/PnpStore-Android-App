@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Fresh_food"
+            android:icon="@drawable/fruits"
+            android:title="Fresh food"
+            />
+        <item
+            android:id="@+id/Food_cupboard"
+            android:icon="@drawable/foodcupboard"
+            android:title="Food cupboard" />
+        <item
+            android:id="@+id/Frozen_food"
+            android:icon="@drawable/frozenfood"
+            android:title="Frozen food" />
+        <item
+            android:id="@+id/meals"
+            android:icon="@drawable/meals"
+            android:title="Convenience meals" />
+        <item
+            android:id="@+id/beverages"
+            android:icon="@drawable/beverages"
+            android:title="beverages" />
+        <item
+            android:id="@+id/baby"
+            android:icon="@drawable/baby"
+            android:title="Baby products" />
+        <item
+            android:id="@+id/Health"
+            android:icon="@drawable/health"
+            android:title="Beauty and Health" />
+        <item
+            android:id="@+id/office"
+            android:icon="@drawable/office"
+            android:title="Electronics and Office" />
+        <item
+            android:id="@+id/outdoor"
+            android:icon="@drawable/outdoor"
+            android:title="Home and Outdoor" />
+        <item
+            android:id="@+id/household"
+            android:icon="@drawable/household"
+            android:title="Household" />
+
+
+    </group>
+
+    <item android:title="Account Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/shareicon"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logouticon"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>
